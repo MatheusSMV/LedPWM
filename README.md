@@ -4,7 +4,7 @@ Este projeto tem como objetivo controlar o movimento de um servo motor utilizand
 
 ## Funcionamento
 
-O código configura a GPIO 13 da Raspberry Pi Pico para gerar um sinal PWM que controla o Led vermelho. A cada 10ms, o ciclo de trabalho do PWM é ajustado de forma incremental, permitindo que aumente a intensidade de sua luz. Quando o servo atinge a intensidade máxima de acordo com wrap, ele começa a reduzir a intensidade até ponto incial.
+O código configura a GPIO 13 da Raspberry Pi Pico para gerar um sinal PWM que controla o Led vermelho. A cada 10ms, o ciclo de trabalho do PWM é ajustado de forma incremental, permitindo que aumente a intensidade de sua luz. Quando o led atinge a intensidade máxima de acordo com wrap, ele começa a reduzir a intensidade até ponto incial.
 
 ### Passos principais do funcionamento:
 
