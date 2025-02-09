@@ -10,11 +10,11 @@ O código configura a GPIO 13 da Raspberry Pi Pico para gerar um sinal PWM que c
 
 1. **Configuração do PWM**:
    - A frequência do PWM é configurada para 50Hz, com um período de 20ms.
-   - O ciclo de trabalho (Duty Cycle) é controlado por um pulso de 400µs a 2500µs, representando a variação do ângulo do servo, mas também utilizado para controlar a intensidade do LED.
+   - O ciclo de trabalho (Duty Cycle) é controlado por um pulso de 400µs a 2500µs, utilizado para controlar a intensidade do LED.
 
 2. **Incremento e Decremento do Pulso**:
-   - A cada 10ms, o valor do pulso é ajustado de forma incremental (+5µs), o que faz o servo mover-se gradualmente, ou aumenta a intensidade do LED.
-   - Quando o pulso atinge o valor máximo (2500µs), ele começa a ser decrementado, movendo o servo de volta para a posição inicial e diminuindo a intensidade do LED.
+   - A cada 10ms, o valor do pulso é ajustado de forma incremental (+5µs), o que aumenta a intensidade do LED.
+   - Quando o pulso atinge o valor máximo (2500µs), ele começa a ser decrementado, diminuindo a intensidade do LED.
 
 3. **Interrupções**:
    - A intensidade é controlada por interrupções, permitindo um controle preciso e regular do LED sem sobrecarregar a CPU.
