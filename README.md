@@ -1,4 +1,4 @@
-# Controle de Servo Motor e LED com PWM e Interrupções
+# Controle de Servo Motor com PWM e Interrupções - Como o LED Red da BitDogLab Se Comporta.
 
 Este projeto tem como objetivo controlar o movimento de um servo motor utilizando a placa Raspberry Pi Pico. O servo motor é movido de maneira suave entre os ângulos de 0° e 180°, após as posições iniciais (180°, 90° e 0°), com um ciclo de trabalho (Duty Cycle) ajustado a cada 10ms, utilizando interrupções para garantir precisão no controle. O comportamento do LED vermelho no pino GPIO 13 é controlado da mesma forma, oferecendo uma visualização do processo.
 
