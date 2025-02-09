@@ -14,7 +14,7 @@ O código configura a GPIO 13 da Raspberry Pi Pico para gerar um sinal PWM que c
 
 2. **Incremento e Decremento do Pulso**:
    - A cada 10ms, o valor do pulso é ajustado de forma incremental (+5µs), o que faz o servo mover-se gradualmente, no Led incrimenta intensidade, pois o pulso do PWM está aumentado.
-   - Quando o pulso atinge o valor máximo (2500µs), ele começa a ser decrementado, movendo o servo de volta para a posição inicial (0°), no Led decrenebta intensidade, pois o pulso do PWM esta diminuindo.
+   - Quando o pulso atinge o valor máximo (2500µs), ele começa a ser decrementado, movendo o servo de volta para a posição inicial (0°), no Led decrementa intensidade, pois o pulso do PWM esta diminuindo.
 
 3. **Interrupções**:
    - A intensidade é controlada por interrupções, o que permite um controle preciso e regular do Led sem consumir recursos excessivos da CPU.
